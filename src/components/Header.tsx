@@ -6,7 +6,7 @@ export default function Header() {
     <header className="border-b border-white/10 px-4 py-2">
       <div className="mx-auto grid max-w-2xl grid-cols-3 items-center">
         <div className="flex justify-start">
-          <div className="h-10 overflow-hidden flex items-center">
+          <div className="h-20 overflow-hidden flex items-center">
             <Image
               src="/icon-192x192.png"
               alt=""
@@ -17,7 +17,7 @@ export default function Header() {
           </div>
         </div>
         <Link href="/sok" className="flex justify-center">
-          <div className="h-10 overflow-hidden flex items-center justify-center">
+          <div className="h-20 overflow-hidden flex items-center justify-center">
             <Image
               src="/runnest-wordmark-transparent.png"
               alt="RUNNEST"
