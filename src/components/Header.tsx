@@ -9,8 +9,8 @@ export default function Header() {
           <Image
             src="/icon-192x192.png"
             alt=""
-            width={32}
-            height={32}
+            width={64}
+            height={64}
             className="rounded-md"
           />
         </div>
