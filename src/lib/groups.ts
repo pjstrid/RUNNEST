@@ -19,6 +19,16 @@ export async function getGroups(filters: GroupFilters = {}): Promise<Group[]> {
   return data ?? [];
 }
 
+export async function getGroup(id: string): Promise<Group | null> {
+  const { data, error } = await supabase
+    .from("groups")
+    .select("*")
+    .eq("id", id)
+    .single();
+  if (error) return null;
+  return data;
+}
+
 export async function getCities(): Promise<string[]> {
   const { data, error } = await supabase
     .from("groups")
