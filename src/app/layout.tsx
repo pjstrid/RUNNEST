@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Quantico, Inter } from "next/font/google";
+import Header from "@/components/Header";
 import "./globals.css";
 
 const quantico = Quantico({
@@ -40,7 +41,10 @@ export default function RootLayout({
       lang="sv"
       className={`${quantico.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+          <Header />
+          {children}
+        </body>
     </html>
   );
 }
