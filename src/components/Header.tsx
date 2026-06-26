@@ -3,20 +3,32 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="border-b border-white/10 px-4 py-3">
-      <div className="mx-auto flex max-w-2xl items-center gap-2.5">
-        <Link href="/sok" className="flex items-center gap-2.5">
-          <Image
-            src="/icon-192x192.png"
-            alt="RUNNEST"
-            width={32}
-            height={32}
-            className="rounded-md"
-          />
-          <span className="font-heading text-xl font-bold tracking-wide text-runnest-yellow">
-            RUNNEST
-          </span>
+    <header className="border-b border-white/10 px-4 py-2">
+      <div className="mx-auto grid max-w-2xl grid-cols-3 items-center">
+        <div className="flex justify-start">
+          <div className="h-20 overflow-hidden flex items-center">
+            <Image
+              src="/icon-192x192.png"
+              alt=""
+              width={64}
+              height={64}
+              className="w-auto h-16"
+            />
+          </div>
+        </div>
+        <Link href="/sok" className="flex justify-center">
+          <div className="h-20 overflow-hidden flex items-center justify-center">
+            <Image
+              src="/runnest-wordmark-transparent.png"
+              alt="RUNNEST"
+              width={140}
+              height={40}
+              priority
+              className="h-32 w-auto"
+            />
+          </div>
         </Link>
+        <div />
       </div>
     </header>
   );
