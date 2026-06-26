@@ -12,7 +12,7 @@ export default function Header() {
               alt=""
               width={64}
               height={64}
-              className="w-auto h-16"
+              className="w-auto h-64"
             />
           </div>
         </div>
@@ -24,7 +24,7 @@ export default function Header() {
               width={140}
               height={40}
               priority
-              className="h-32 w-auto"
+              className="h-64 w-auto"
             />
           </div>
         </Link>
